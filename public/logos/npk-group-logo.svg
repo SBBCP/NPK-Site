@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 52" fill="none" aria-label="NPK Group">
+  <!-- N · P · K lettermark -->
+  <text
+    x="0"
+    y="36"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="38"
+    font-weight="400"
+    letter-spacing="6"
+    fill="currentColor"
+  >N·P·K</text>
+  <!-- GROUP label -->
+  <text
+    x="3"
+    y="50"
+    font-family="Arial, Helvetica, sans-serif"
+    font-size="9"
+    font-weight="400"
+    letter-spacing="7"
+    fill="currentColor"
+    opacity="0.75"
+  >GROUP</text>
+</svg>

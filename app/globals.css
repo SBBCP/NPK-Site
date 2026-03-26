@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  --color-brand-parchment: #F7F5F0;
+  --color-brand-surface:   #FFFFFF;
+  --color-brand-ink:       #1A1A18;
+  --color-brand-muted:     #6B6B5E;
+  --color-brand-green:     #2C4A1E;
+  --color-brand-earth:     #8B7355;
+  --color-brand-border:    #E0DDD6;
+
+  /* Fonts */
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-sans:    "Jost", system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F7F5F0;
+  color: #1A1A18;
+  font-family: "Jost", system-ui, sans-serif;
+  font-weight: 400;
+}
+
+/* Grain texture overlay for hero */
+.grain-bg {
+  position: relative;
+}
+.grain-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23noise)' opacity='0.4'/%3E%3C/svg%3E");
+  opacity: 0.035;
+  pointer-events: none;
+  z-index: 1;
+}
+.grain-bg > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* Smooth nav link underline animation */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: currentColor;
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* Fade-in animation */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
