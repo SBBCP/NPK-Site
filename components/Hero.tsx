@@ -25,7 +25,7 @@ export default function Hero() {
         </p>
 
         {/* Headline */}
-        <h1 className="font-display text-5xl md:text-6xl lg:text-7xl font-[400] leading-[1.1] mb-8 max-w-4xl mx-auto">
+        <h1 className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[400] leading-[1.1] mb-8 max-w-4xl mx-auto">
           The Science Behind Great Lawns.{" "}
           <br className="hidden md:block" />
           The Strategy Behind Great Companies.
@@ -35,7 +35,7 @@ export default function Hero() {
         <div className="w-12 h-px bg-white/40 mx-auto mb-8" />
 
         {/* Subheadline */}
-        <p className="font-sans text-lg md:text-xl font-[300] leading-relaxed text-white/80 max-w-2xl mx-auto mb-12">
+        <p className="font-sans text-base md:text-lg lg:text-xl font-[300] leading-relaxed text-white/80 max-w-2xl mx-auto mb-12">
           NPK Group acquires and grows exceptional lawn and plant care
           businesses across the Heartland — the kind built on expertise,
           trusted by homeowners, and rooted in their communities.
